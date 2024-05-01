@@ -1,0 +1,154 @@
+# public, protected, private 修饰符对齐
+# AccessModifierOffset: 2
+
+# 长函数调用时，参数对齐, 括号形式
+# someLongFunction(
+#     argument1, argument2
+# )
+#
+AlignAfterOpenBracket: BlockIndent
+AlignArrayOfStructures: None
+
+# 连续的赋值语句对齐
+AlignConsecutiveAssignments: 
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCompound: true
+  PadOperators: true
+
+#AlignConsecutiveBitFields: false
+AlignConsecutiveDeclarations: None
+AlignConsecutiveMacros: None
+AlignEscapedNewlines: Right
+
+# Align
+# x = aaaaaaaa +
+#     bbbbbbbb
+#
+#   when BreakBeforeBinaryOperators is set
+#
+# x = aaaaaaaa +
+#     bbbbbbbb
+#
+# AlignAfterOperator
+# x = aaaaaaaa
+#   + bbbbbbbb
+#AlignOperands: AlignAfterOperator
+
+AlignTrailingComments: 
+  Kind: Always
+  OverEmptyLines: 2
+
+# true:
+# callFunction(
+    # a, b, c, d);
+#
+# false:
+# callFunction(a,
+             # b,
+             # c,
+             # d);
+AllowAllArgumentsOnNextLine: false
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortBlocksOnASingleLine: Always
+AllowShortCaseLabelsOnASingleLine: true
+#AllowShortEnumsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: true
+
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: false
+
+BinPackArguments: false
+BinPackParameters: false
+#BitFieldColonSpacing: Both
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterCaseLabel: true
+  AfterControlStatement: MultiLine
+  AfterEnum: true
+  AfterFunction: true
+  AfterStruct: true
+  AfterUnion: true
+  AfterExternBlock: false # extern "C" {
+  BeforeElse: false # } else {
+  #BeforeLambdaBody: false
+  #BeforeWhile: false
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+
+# true:
+# veryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongDescription
+#     ? firstValue
+#     : SecondValueVeryVeryVeryVeryLong;
+# 
+# false:
+# veryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongDescription ?
+#     firstValue :
+#     SecondValueVeryVeryVeryVeryLong;
+BreakBeforeTernaryOperators: true
+BreakStringLiterals: false
+
+ColumnLimit: 0 # 0: no limit
+
+FixNamespaceComments: true # 加上丢失的namespace注释
+IncludeBlocks: Preserve
+#IndentCaseBlocks: false
+IndentCaseLabels: true
+IndentGotoLabels: false
+
+# #if FOO
+#   #if BAR
+#     #include <foo>
+#   #endif
+# #endif
+IndentPPDirectives: BeforeHash
+# IndentAccessModifiers: true
+IndentWidth: 2
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 3
+NamespaceIndentation: None
+
+# Left:
+# int* a;
+# Right:
+# int *a;
+# Middle:
+# int * a;
+PointerAlignment: Right
+
+# QualifierOrder
+
+ReferenceAlignment: Right
+
+# 按照列数限制, 将注释进行换行
+ReflowComments: false
+
+SortIncludes: CaseSensitive
+SortUsingDeclarations: true
+
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
+SpaceAfterTemplateKeyword: false
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCpp11BracedList: false
+SpaceBeforeCaseColon: false
+SpaceBeforeCtorInitializerColon: false
+SpaceBeforeInheritanceColon: false
+SpaceBeforeParens: ControlStatements
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceBeforeSquareBrackets: false
+SpaceInEmptyBlock: false
+SpaceInEmptyParentheses: false
+SpacesBeforeTrailingComments: 2
+SpacesInAngles: Leave
+SpacesInCStyleCastParentheses: false
+SpacesInConditionalStatement: false
+SpacesInContainerLiterals: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+
+TabWidth: 4
+UseTab: Never
